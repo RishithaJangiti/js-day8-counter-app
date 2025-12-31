@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Counter App</h1>
+    <button id="increment" >Increment</button>
+    <button id="decrement">Decrement</button>
+    <button id="reset">reset</button>
+</body>
+<script>
+    let count=0;
+    let incrementBtn=document.getElementById("increment");
+     let decrementBtn=document.getElementById("decrement");
+    let resetBtn=document.getElementById("reset");
+     incrementBtn.addEventListener("click",function(){
+       count++;
+       incrementBtn.innerText=count;
+     });
+     decrementBtn.addEventListener("click",function(){
+        count--;
+        decrementBtn.innerText=count;
+     });
+     resetBtn.addEventListener("click",function(){
+        count=0;
+        resetBtn.innerText=count;
+     });
+     </script>
+     </html>
